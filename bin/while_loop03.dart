@@ -1,22 +1,23 @@
 /*
   Create function func with "a " argument
   Return the sum of odd numbers up to "a".
-*/
-void main() {
+*/ 
   int func(int a) {
-    int y = 0;
-    int x = 0;
-    while (x <= a) {
-      if (x % 2 == 0) {
-        y += 1;
-      }
-      x++;
+  int b = 0;
+  int c = 0;
+  while (c <= a) {
+    
+    if (c % 2 == 1) {
+      b+=c;
     }
-    return y;
+    c++;
   }
-
-  void main() {
-    print(func(15));
-  }
+  return b;
 }
+
+void main() {
+  print(func(3));
+}
+
+
 
