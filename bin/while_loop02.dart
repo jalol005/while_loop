@@ -2,20 +2,19 @@
   Create function func with "a " argument
   Return the number of even numbers up to "a".
 */
-void main() {
-  int func(int a) {
-    int y = 0;
-    int x = 0;
-    while (x <= a) {
-      if (x % 2 == 0) {
-        y += 1;
-      }
-      x++;
+int func(int a) {
+  int b = 0;
+  int c = 0;
+  while (c <= a) {
+    
+    if (c % 2 == 0) {
+      b++;
     }
-    return y;
+    c++;
   }
+  return b;
+}
 
-  void main() {
-    print(func(17));
-  }
+void main() {
+  print(func(22));
 }
